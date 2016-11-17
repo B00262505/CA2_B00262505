@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.js"></script>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.css" />
+
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+
+<!--HOME PAGE-->
+        <div data-role="page" id="home-page">
+
+            <div data-role="header" data-theme="b">
+                <h1>My Sightings</h1>
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a href="#" data-icon="grid" class="ui-btn-active"></a></li>
+                        <li><a href="#newsighting-page" data-icon="camera" data-transition="flip"></a></li>
+                        <li><a href="#info-page" data-icon="info" data-transition="flip"></a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /header -->
+
+            <div data-role="content">
+                <ul>
+                    <li><strong>asdasd</strong></li>
+                </ul>
+            </div><!-- /content -->
+
+        </div><!-- /page -->
+<!--END HOME PAGE-->
+
+
+<!--NEW SIGHTING PAGE-->
+        <div data-role="page" id="newsighting-page">
+
+            <div data-role="header" data-theme="b">
+                <h1>Add Sighting</h1>
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a href="#home-page" data-icon="grid" data-transition="flip"></a></li>
+                        <li><a href="#" data-icon="camera" class="ui-btn-active"></a></li>
+                        <li><a href="#info-page" data-icon="info" data-transition="flip"></a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /header -->
+
+            <div data-role="content">
+                <form>
+                    <a id="new-image-button"><img id="new-image-image" src="noimage.jpg" class="half-width-height"></a>
+                    <hr/>
+                    <input type="text" placeholder="Enter a title" id="new-title"/>
+                    <textarea rows="5" placeholder="Enter a brief description" id="new-description"></textarea>
+                    <label for="new-gps-checkbox">Include GPS location<input id="new-gps-checkbox" type="checkbox"/></label>
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>Species:</legend>
+                        <input type="radio" name="new-species-input" id="new-mammal" value="mammal" checked="checked">
+                        <label for="new-mammal">Mammal</label>
+                        <input type="radio" name="new-species-input" id="new-bird" value="bird">
+                        <label for="new-bird">Bird</label>
+                        <input type="radio" name="new-species-input" id="new-fish" value="fish">
+                        <label for="new-fish">Fish</label>
+                        <input type="radio" name="new-species-input" id="new-reptile" value="reptile">
+                        <label for="new-reptile">Reptile</label>
+                    </fieldset>
+
+                    <a class="ui-btn ui-btn-inline" id="new-save-form-button">Save</a>
+                    <a class="ui-btn ui-btn-inline" id="new-clear-form-button">Clear</a>
+                </form>
+            </div><!-- /content -->
+
+        </div><!-- /page -->
+<!--END NEW SIGHTING PAGE-->
+
+<!--INFO PAGE-->
+        <div data-role="page" id="info-page">
+
+            <div data-role="header" data-theme="b">
+                <h1>Info</h1>
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a href="#home-page" data-icon="grid" data-transition="flip"></a></li>
+                        <li><a href="#newsighting-page" data-icon="camera" data-transition="flip"></a></li>
+                        <li><a href="#" data-icon="info" class="ui-btn-active"></a></li>
+                    </ul>
+                </div><!-- /navbar -->
+            </div><!-- /header -->
+
+            <div data-role="content">
+                <ul>
+                    <li><strong>milkshake</strong></li>
+                </ul>
+            </div><!-- /content -->
+
+        </div><!-- /page -->
+<!--END INFO PAGE-->
+
+
+    </body>
+</html>
+
