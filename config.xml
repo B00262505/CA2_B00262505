@@ -8,7 +8,7 @@
         PhoneGap Team
     </author>
 
-    <gap:plugin name="org.apache.cordova.camera"/>
+    <gap:plugin name="cordova-plugin-camera"/>
 
     <content src="index.html" />
     <access origin="*" />
