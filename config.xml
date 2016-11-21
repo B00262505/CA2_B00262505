@@ -7,8 +7,8 @@
     <author email="B00262505@studentmail.uws.ac.uk" href="http://andyfranklin.co.uk">
         Andy Franklin
     </author>
-    <gap:plugin name="org.apache.cordova.camera" />
-    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.camera" source="npm"/>
+    <gap:plugin name="org.apache.cordova.geolocation" source="npm"/>
     <plugin name="cordova-sqlite-storage" spec="~1.4.8" />
 
     <content src="index.html" />
