@@ -6,6 +6,10 @@
     "config_munge": {
         "files": {}
     },
-    "installed_plugins": {},
+    "installed_plugins": {
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.phonegap.ca2"
+        }
+    },
     "dependent_plugins": {}
 }
